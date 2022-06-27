@@ -10,6 +10,27 @@
   - java 1.8
   - QueryDSL
   - Spring Data JPA
+
+# 실행방법
+- git에서 clone을 받습니다.
+
+- application-real-db.properties 설정을 합니다.
+```
+spring.datasource.url=jdbc:mysql:DB주소/스키마명
+spring.datasource.username=DB계정명
+spring.datasource.password=DB비밀번호
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+```
+
+- Querydsl 사용법
+  - IntelliJ 
+    > Gradle -> Tasks -> build -> clean
+    > Gradle -> Tasks -> other -> compileQueryds
+
+  - 콘솔사용법
+    > ./gradlew clean compileQueryds
+
+- **IntelliJ에서 서버실행 전 먼저 Querydsl를 실행 후 프로젝트를 실행**시킵니다. 
   
 # 개발
 - 구조
