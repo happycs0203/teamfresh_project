@@ -1,6 +1,6 @@
 # teamfresh_project
-VOC에 대한 배상 개발
-(VOC 목록 API, 배상 목록 API, VOC 등록 API, 배상정보 등록 API)
+-VOC에 대한 배상 개발
+-(VOC 목록 API, 배상 목록 API, VOC 등록 API, 배상정보 등록 API)
 ------------
 # 구성
 - 환경
@@ -13,6 +13,7 @@ VOC에 대한 배상 개발
   
 # 개발
 - 구조
+```
 project
     ├─api api controller 폴더
     │  └─dto api Request Response 폴더
@@ -20,7 +21,8 @@ project
     ├─domain 도메인 폴더
     │  └─dto
     ├─repository 레포지토리 폴더
-    └─service 서비스 
+    └─service 서비스
+```
 
 - DDL
 ```
