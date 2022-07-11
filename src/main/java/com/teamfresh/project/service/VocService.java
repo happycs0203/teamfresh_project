@@ -5,6 +5,11 @@ import com.teamfresh.project.domain.dto.VocDto;
 
 import java.util.List;
 
+/**
+ * @author ChangSu, Ham
+ * @version 1.0
+ * @Desc VOC 정보 서비스 인터페이스
+ */
 public interface VocService {
 
 

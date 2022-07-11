@@ -13,6 +13,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Optional;
 
+/**
+ * @author ChangSu, Ham
+ * @version 1.0
+ * @Desc 공통부분 서비스 로직
+ */
 @Service
 @Transactional(readOnly = true)
 @RequiredArgsConstructor

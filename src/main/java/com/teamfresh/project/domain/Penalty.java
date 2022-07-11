@@ -5,6 +5,11 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
+/**
+ * @author ChangSu, Ham
+ * @version 1.0
+ * @Desc 패널티 정보 엔티티
+ */
 @Entity
 @Getter
 @NoArgsConstructor

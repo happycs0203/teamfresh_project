@@ -29,6 +29,10 @@ public class VocApiController {
 
     private final VocService vocService;
 
+    /**
+     * @Desc VOC 조회 (VOC의 귀책 당사자, 귀책 내용, 패널티 내용, 기사 확인 여부, 이의제기 여부, 배상정보 등의 정보)
+     * @return
+     */
     @GetMapping("/vocs")
     public ResponseEntity searchVoc() {
         List<VocDto> vocDtoList = vocService.searchVocList();
@@ -36,6 +40,11 @@ public class VocApiController {
         return new ResponseEntity(DefaultResponse.res(StatusCode.OK, ResponseMessage.VOC_SUCCESS, result), HttpStatus.OK);
     }
 
+    /**
+     * @Desc VOC 등록
+     * @param vocRequest
+     * @return
+     */
     @PostMapping("/vocs")
     public ResponseEntity createVoc(@RequestBody VocRequest vocRequest){
         String message = vocService.createVoc(vocRequest);

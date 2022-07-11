@@ -25,6 +25,10 @@ public class CompensationApiController {
 
     private final CompensationService compensationService;
 
+    /**
+     * @Desc 배상정보 (배상정보의 VOC 정보, 배상금액 정보 )
+     * @return
+     */
     @GetMapping("/compensations")
     public ResponseEntity searchCompensations() {
 

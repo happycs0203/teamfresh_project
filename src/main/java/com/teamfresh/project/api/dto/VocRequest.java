@@ -3,6 +3,11 @@ package com.teamfresh.project.api.dto;
 import com.teamfresh.project.domain.VocType;
 import lombok.Data;
 
+/**
+ * @author ChangSu, Ham
+ * @version 1.0
+ * @Desc VOC 리퀘스트
+ */
 @Data
 public class VocRequest {
 
